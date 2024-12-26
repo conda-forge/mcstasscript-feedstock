@@ -5,21 +5,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/m/mcstasscript/mcstasscript-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/m/mcstasscript/mcstasscript-{{ version }}.tar.gz
   sha256: 47dd4e9ed6dc4c68c80495675afbcaa0c8dbb9662913cb8a4e8f5b26f4a630e4
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy
     - matplotlib-base
     - pyyaml
@@ -39,6 +39,7 @@ test:
   requires:
     - pytest
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://mads-bertelsen.github.io/
