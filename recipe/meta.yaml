@@ -1,4 +1,4 @@
-{% set version = "0.0.75" %}
+{% set version = "0.0.76" %}
 
 package:
   name: mcstasscript
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/mcstasscript/mcstasscript-{{ version }}.tar.gz
-  sha256: 8b838e7b40623554da848cfb94f4871dddc6c82a37005891e222b5e4053fd097
+  sha256: 4733f5a46b329813f3935dea673508b845cae0abd2437bd033839e11f4c49328
 
 build:
   noarch: python
