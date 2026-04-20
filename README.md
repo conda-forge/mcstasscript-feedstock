@@ -24,11 +24,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=23411&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/mcstasscript-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -157,7 +156,4 @@ Feedstock Maintainers
 * [@mads-bertelsen](https://github.com/mads-bertelsen/)
 * [@tkittel](https://github.com/tkittel/)
 * [@willend](https://github.com/willend/)
-
-
-<!-- dummy commit to enable rerendering -->
 
