@@ -3,7 +3,7 @@ About mcstasscript-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mcstasscript-feedstock/blob/main/LICENSE.txt)
 
-Home: https://mads-bertelsen.github.io/
+Home: https://panosc-vinyl.github.io/McStasScript
 
 Package license: BSD-3-Clause
 
@@ -11,7 +11,7 @@ Summary: McStas API for creating and running McStas instruments from python scri
 
 Development: https://github.com/PaNOSC-ViNYL/McStasScript
 
-Documentation: https://mads-bertelsen.github.io/
+Documentation: https://panosc-vinyl.github.io/McStasScript
 
 McStasScript is a Python API for McStas, which allows the user to get help,
 build their instrument, perform simulations and plot the resulting
@@ -51,31 +51,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `mcstasscript` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install mcstasscript
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install mcstasscript
 ```
 
-It is possible to list all of the versions of `mcstasscript` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add mcstasscript
+# for installing globally
+pixi global install mcstasscript
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `mcstasscript` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search mcstasscript --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search mcstasscript --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search mcstasscript --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -87,6 +129,8 @@ mamba repoquery whoneeds mcstasscript --channel conda-forge
 # List dependencies of `mcstasscript`:
 mamba repoquery depends mcstasscript --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
